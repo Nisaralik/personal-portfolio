@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+ html{
+        scroll-behavior: smooth;
+        transition: scroll 1.5s;
+    }
+    
+}
+body{
+    background:#080808 ;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(nisar\ ali\ k\ 001.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+    /* margin-top: 30px; */
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px ;
+    margin-top: -40px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:  blue;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 30px;
+    transition: 0.5s;
+    display: none;
+   
+}
+nav ul li a:hover::after{
+    width: 100%;
+    
+
+
+}
+.header-text{
+    margin-top:8%;
+    margin-left: 150px;
+    font-size: 13px;
+    font-weight: 300;
+
+}
+.header-text h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.header-text p{
+    margin-left: 2px;
+    font-size: 15px;
+    font-weight: 400;
+   
+ 
+}
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+  
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+ flex-basis: 35%;
+
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(42, 14, 225);
+
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px ;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-links::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    
+    
+}
+.tab-contents ul li span{
+    color:blue ;
+    font-size: 14px;
+    margin-left: -2px;
+    margin-top: 5px;
+    
+}
+.tab-contents{
+    display: none;
+
+}
+.tab-contents.active-tabs{
+    display: block;
+}
+
+
+#services{
+    padding: 30px 0;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+   
+}
+.services-list div{
+    background: #181717;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+   
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+    
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #3c00ff;
+    transform: translateY(-10px);
+}
+.services-list a i{
+    font-size: 10px;
+    margin-left: 5px;
+   
+ 
+
+}
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    /* display: flex; */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+.work img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    background-color: #262730;
+    transition: transform 0.5s;
+}
+.des{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#061ef3);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+  
+}
+.des h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.des a{
+    margin-top: 20px;
+    color: #3c00ff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+
+}
+.work:hover .des{
+    height: 100%;
+}
+.button{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #061ef3;
+    padding: 14px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.button:hover{
+    background: #061ef3;
+}
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+
+}
+.contact-left p{
+    margin-top: 30px;
+    
+}
+.contact-left p i{
+    color: #fbfbfc;
+    font-size: 20px;
+    margin-right: 15px;
+   
+}
+.contact-left p a{
+    text-decoration: none;
+    color: #fbfbfc;
+}
+    
+
+.socialmedia{
+    margin-top: 30px;
+}
+.socialmedia a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.socialmedia a:hover{
+    transform: translateY(-5px);
+    color: #061ef3;
+}
+.button.button1{
+
+    display: inline-block;
+    background:#061ef3;
+    margin-top: 100px;
+    margin-left: 150px;
+    width: fit-content;
+   
+ 
+}
+.button.button2{
+    display:inline-block;
+    margin-top: 80px;
+ 
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:  #17181c;
+    opacity: 50%;
+    padding: 15px;
+    margin: 15px;
+    margin-top: -5px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.button3{
+    display: block;
+    margin: 50px auto;
+    background-color: #061ef3;
+    padding: 14px 50px;
+    border-radius: 5px;
+    border: #3c00ff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+
+ 
+   
+
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #17181c;
+    font-weight: 300;
+    margin-top: 20px;
+    
+}
+.copyright i{
+    color: #f30694;
+    font-size: 15px;
+    padding: 10px;
+    
+}
+nav .fa-solid{
+    display: none;
+}
+#msg{
+    color: #05f909;
+    margin-left: 200px;
+    margin-top: -80px;
+    font-size: 20px;
+    font-weight: 1000;
+   
+   
+}
+
+
+
+
+.spinner {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #dbdcef #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+    margin-left: 340px;
+    margin-top: -40px;
+  }
+  
+  .spinner::before,
+  .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+  }
+  
+  .spinner::before {
+    border-color: #474bff #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+  }
+  
+  .spinner::after {
+    margin: 8.9px;
+  }
+  
+  @keyframes spinner-e04l1k {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+  #spinner{
+    color: rgb(3, 248, 3);
+    font-weight: 1000;
+  }
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(nisar\ ali\ 56567tttu.png);
+    }
+    .header-text{
+        margin-top: 70%;
+        font-size: 20px;
+        margin-left: -10px;
+        text-align: center;
+        /* background-color: #080808; */
+        border-radius: 20px;
+        opacity: 90%;
+        color: rgb(253, 251, 252);
+       
+    
+       
+    }
+    .header-text h1{
+        font-size: 25px;
+        
+        
+        
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        margin-top: -50px;
+     
+      
+    }
+  
+    
+    nav ul{
+        background: #061ef3;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 65px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub{
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+      
+      
+
+    }
+    .contact-right{
+        flex-basis: 90%;
+        color: #fff;
+       
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    .contact-left{
+        font-size: 14px;
+        margin-bottom: 50px;
+        
+    }
+    .button.button1{
+        display: inline-block;
+        background:#061ef3;
+        margin-top: 50px;
+        margin-left: 50px;
+    
+    }
+    .button.button2{
+        display: block;
+        margin-top: -20px;
+        margin-left: 60px;
+    
+    }
+    .button3{
+        margin-left: 70px;
+        width:fit-content ;
+        font-size: 15px;
+        color: #fdfbfb;
+    }
+    .logo{
+        margin-left: -35px;
+        margin-top: -50px;
+    }
+    .des a{
+        margin-top: -120px;
+    }
+    .des h3 {
+        margin-top: -70px;
+    }
+    form input, form textarea{
+        background: #ffffff;
+        
+    }
+    #services{
+        margin-top: -100px;
+    }
+    #portfolio{
+        margin-top: -50px;
+    }
+    #contact{
+        margin-top: -70px;
+    }
+   .header-text h1{
+    background-image: url(dddepth-329.jpg );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+}
+#spinner{
+    margin-left: 130px;
+}
+#msg{
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 0px;
+}
+
+
+
+}
