@@ -43,7 +43,7 @@ function opentab(tabname){
         },5000)
         form.reset()
       })
-      spinner.innerHTML ="Success"
+      spinner.innerHTML ="Loading Loading"
       setTimeout(function(){
         spinner.innerHTML=""
       },4000)

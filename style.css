@@ -29,6 +29,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: -20px;
 }
 .logo{
     width: 140px;
@@ -75,12 +76,15 @@ nav ul li a:hover::after{
 }
 .header-text h1{
     font-size: 40px;
-    margin-top: 10px;
+ 
 }
 .header-text p{
+    
     margin-left: 2px;
     font-size: 15px;
     font-weight: 400;
+    margin-top: -50px;
+ 
    
  
 }
@@ -90,6 +94,9 @@ nav ul li a:hover::after{
     color: #ababab;
   
 
+}
+#about{
+    text-align: justify;
 }
 .row{
     display: flex;
@@ -174,7 +181,7 @@ nav ul li a:hover::after{
    
 }
 .services-list div{
-    background: #181717;
+    background: #121212;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -188,7 +195,7 @@ nav ul li a:hover::after{
     
 }
 .services-list div h2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -200,7 +207,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #3c00ff;
+    background:linear-gradient(rgba(229, 3, 169, 0.6),#061ef3);
     transform: translateY(-10px);
 }
 .services-list a i{
@@ -209,6 +216,9 @@ nav ul li a:hover::after{
    
  
 
+}
+.services-list p{
+    text-align: justify;
 }
 #portfolio{
     padding: 50px 0;
@@ -233,7 +243,7 @@ nav ul li a:hover::after{
     height: 100%;
     border-radius: 10px;
     display: flex;
-    background-color: #262730;
+    background-color: #254f4f;
     transition: transform 0.5s;
 }
 .des{
@@ -259,6 +269,10 @@ nav ul li a:hover::after{
     font-weight: 500;
     margin-bottom: 20px;
 
+}
+.des p{
+    text-align: justify;
+    font-size: 12px;
 }
 .des a{
     margin-top: 20px;
@@ -336,7 +350,7 @@ nav ul li a:hover::after{
 
     display: inline-block;
     background:#061ef3;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-left: 150px;
     width: fit-content;
    
@@ -360,7 +374,7 @@ form input, form textarea{
     padding: 15px;
     margin: 15px;
     margin-top: -5px;
-    color: #fff;
+    color: #0e05f8;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -398,11 +412,10 @@ nav .fa-solid{
     display: none;
 }
 #msg{
-    color: #05f909;
-    margin-left: 200px;
-    margin-top: -80px;
+    color: #f9f9f9;
+    margin-left: 170px;
     font-size: 20px;
-    font-weight: 1000;
+    font-weight: 500;
    
    
 }
@@ -451,8 +464,27 @@ nav .fa-solid{
   #spinner{
     color: rgb(3, 248, 3);
     font-weight: 1000;
+    margin-left: 320px;
   }
+  .tec{
+   
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    margin-top: 30px;
+    margin-left: -15px;
+  
+    
+  }
+.tec img{
+    display: flex;
+    margin-left: 15px;
+    
 
+}
 
 
 
@@ -460,24 +492,38 @@ nav .fa-solid{
 
 
 @media only screen and (max-width: 600px){
+
+
+    
     #header{
-        background-image: url(nisar\ ali\ 56567tttu.png);
-    }
+        background-image: url(nizar\ ali\ 09.png);
+        width: 100%;
+        height: 500px;
+        /* background-color: #1b1818; */
+        border-radius: 50%  ;
+       
+     
+        
+}
+
+
+
     .header-text{
-        margin-top: 70%;
+       margin-top: 450px;
         font-size: 20px;
         margin-left: -10px;
         text-align: center;
         /* background-color: #080808; */
         border-radius: 20px;
         opacity: 90%;
-        color: rgb(253, 251, 252);
+        color: rgb(255, 255, 255);
        
     
        
     }
     .header-text h1{
         font-size: 25px;
+       
         
         
         
@@ -485,7 +531,8 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
-        margin-top: -50px;
+        margin-top: -20px;
+        
      
       
     }
@@ -511,6 +558,7 @@ nav .fa-solid{
         top: 65px;
         left: 25px;
         cursor: pointer;
+        margin-top: -40px;
     }
     .sub{
         font-size: 40px;
@@ -520,6 +568,7 @@ nav .fa-solid{
     }
     .about-col-1{
         margin-bottom: 30px;
+        margin-top: 340px;
     }
     .about-col-2{
         font-size: 14px;
@@ -536,11 +585,12 @@ nav .fa-solid{
     }
     .contact-right{
         flex-basis: 90%;
-        color: #fff;
+        color: #0307f5;
        
     }
     .copyright{
         font-size: 14px;
+        /* margin-bottom: 70px; */
     }
     .contact-left{
         font-size: 14px;
@@ -568,13 +618,18 @@ nav .fa-solid{
     }
     .logo{
         margin-left: -35px;
-        margin-top: -50px;
+        margin-top: -20px;
     }
     .des a{
         margin-top: -120px;
+        font-size: 12px;
     }
     .des h3 {
         margin-top: -70px;
+        font-size: 15px;
+    }
+    .des p{
+        text-align: justify;
     }
     form input, form textarea{
         background: #ffffff;
@@ -583,26 +638,36 @@ nav .fa-solid{
     #services{
         margin-top: -100px;
     }
+    .services-list p{
+        text-align: justify;
+    }
     #portfolio{
         margin-top: -50px;
     }
     #contact{
         margin-top: -70px;
     }
-   .header-text h1{
-    background-image: url(dddepth-329.jpg );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-size: cover;
-}
+    
 #spinner{
     margin-left: 130px;
 }
 #msg{
     font-size: 10px;
     font-weight: 500;
-    margin-left: 0px;
+    margin-left: 65px;
+    color: #f9f9f9;
+}
+.tec{
+ margin-left: -8px;
+ width: 30px;
+ height: 30px;
+
+}
+.services-list div h2{
+    font-size: 20px;
+}
+.des a{
+    font-size: 20px;
 }
 
 
