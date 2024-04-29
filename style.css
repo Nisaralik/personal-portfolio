@@ -5,10 +5,11 @@
     box-sizing: border-box;
  html{
         scroll-behavior: smooth;
-        transition: scroll 1.5s;
+        transition: scroll 5.5s;
     }
     
 }
+
 body{
     background:#080808 ;
     color: #fff;
@@ -19,6 +20,7 @@ body{
     background-image: url(nisar\ ali\ k\ 001.jpg);
     background-size: cover;
     background-position: center;
+    
 }
 .container{
     padding: 10px 10%;
@@ -464,7 +466,7 @@ nav .fa-solid{
   #spinner{
     color: rgb(3, 248, 3);
     font-weight: 1000;
-    margin-left: 320px;
+    margin-left: 350px;
   }
   .tec{
    
@@ -500,7 +502,7 @@ nav .fa-solid{
         width: 100%;
         height: 500px;
         /* background-color: #1b1818; */
-        border-radius: 50%  ;
+        border-radius: 50% ;
        
      
         
