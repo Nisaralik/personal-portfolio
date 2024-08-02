@@ -90,12 +90,7 @@ nav ul li a:hover::after{
    
  
 }
-.header-text img{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    left: 20px;
-}
+
 
 #about{
     padding: 80px 0;
@@ -530,13 +525,6 @@ nav .fa-solid{
        
     
        
-    }
-    .header-text img{
-        width: 20px;
-        height: 20px;
-        position: relative;
-        left: 10px;
-        top: 5px;
     }
     .header-text h1{
         font-size: 25px;
